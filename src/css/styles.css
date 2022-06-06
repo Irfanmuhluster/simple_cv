@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-green {
+      @apply py-3 px-6 bg-emerald-500 text-white font-semibold rounded-sm shadow-sm hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-opacity-75;
+    }
+    .btn-white {
+      @apply py-3 px-6 bg-white text-gray-500 font-semibold rounded-sm shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-100 focus:ring-opacity-75;
+    }
+    blockquote:before {
+       content: open-quote;
+    }
+    blockquote:after {
+      content: close-quote;
+   }
+   blockquote:before,
+   blockquote::after {
+     display: inline-block;
+     vertical-align: bottom;
+     font-size: 4em;
+     line-height: 0.4em;
+      vertical-align: -0.4em;
+   }
+   blockquote::before {
+     
+      margin-right: 0.25em;
+   }
+   blockquote::after {
+     
+    margin-left: 0.25em;
+   }
+
+  .block-agenda {
+    padding: 1rem;
+  }
+  .block-agenda .block-agenda-tanggal {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color:  #F3F4F6;
+    background-color: #374151;
+    font-weight: 700;
+    border-radius: 0.5rem;
+}
+
+.block-agenda .block-agenda-description {
+    display: inline;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1.5rem;
+    color: #374151;
+}
+
+}
